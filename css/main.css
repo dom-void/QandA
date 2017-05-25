@@ -1,10 +1,70 @@
+@font-face {
+  font-family: 'Vollkorn';
+  src: url("../fonts/Vollkorn-Italic.eot");
+  src: local("Vollkorn Italic"), local("Vollkorn-Italic"), url("../fonts/Vollkorn-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Vollkorn-Italic.woff2") format("woff2"), url("../fonts/Vollkorn-Italic.woff") format("woff"), url("../fonts/Vollkorn-Italic.ttf") format("truetype"), url("../fonts/Vollkorn-Italic.svg#Vollkorn-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Vollkorn';
+  src: url("../fonts/Vollkorn-Regular.eot");
+  src: local("Vollkorn Regular"), local("Vollkorn-Regular"), url("../fonts/Vollkorn-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Vollkorn-Regular.woff2") format("woff2"), url("../fonts/Vollkorn-Regular.woff") format("woff"), url("../fonts/Vollkorn-Regular.ttf") format("truetype"), url("../fonts/Vollkorn-Regular.svg#Vollkorn-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/Cuprum-BoldItalic.eot");
+  src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"), url("../fonts/Cuprum-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Cuprum-BoldItalic.woff2") format("woff2"), url("../fonts/Cuprum-BoldItalic.woff") format("woff"), url("../fonts/Cuprum-BoldItalic.ttf") format("truetype"), url("../fonts/Cuprum-BoldItalic.svg#Cuprum-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/Cuprum-Italic.eot");
+  src: local("Cuprum Italic"), local("Cuprum-Italic"), url("../fonts/Cuprum-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Cuprum-Italic.woff2") format("woff2"), url("../fonts/Cuprum-Italic.woff") format("woff"), url("../fonts/Cuprum-Italic.ttf") format("truetype"), url("../fonts/Cuprum-Italic.svg#Cuprum-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Vollkorn Bold';
+  src: url("../fonts/Vollkorn-BoldItalic.eot");
+  src: local("Vollkorn Bold Italic"), local("Vollkorn-BoldItalic"), url("../fonts/Vollkorn-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Vollkorn-BoldItalic.woff2") format("woff2"), url("../fonts/Vollkorn-BoldItalic.woff") format("woff"), url("../fonts/Vollkorn-BoldItalic.ttf") format("truetype"), url("../fonts/Vollkorn-BoldItalic.svg#Vollkorn-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/Cuprum-Regular.eot");
+  src: local("Cuprum"), local("Cuprum-Regular"), url("../fonts/Cuprum-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Cuprum-Regular.woff2") format("woff2"), url("../fonts/Cuprum-Regular.woff") format("woff"), url("../fonts/Cuprum-Regular.ttf") format("truetype"), url("../fonts/Cuprum-Regular.svg#Cuprum-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/Cuprum-Bold.eot");
+  src: local("Cuprum Bold"), local("Cuprum-Bold"), url("../fonts/Cuprum-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Cuprum-Bold.woff2") format("woff2"), url("../fonts/Cuprum-Bold.woff") format("woff"), url("../fonts/Cuprum-Bold.ttf") format("truetype"), url("../fonts/Cuprum-Bold.svg#Cuprum-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vollkorn';
+  src: url("../fonts/Vollkorn-Bold.eot");
+  src: local("Vollkorn Bold"), local("Vollkorn-Bold"), url("../fonts/Vollkorn-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Vollkorn-Bold.woff2") format("woff2"), url("../fonts/Vollkorn-Bold.woff") format("woff"), url("../fonts/Vollkorn-Bold.ttf") format("truetype"), url("../fonts/Vollkorn-Bold.svg#Vollkorn-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
-}
-
-header {
-  background: red;
 }
 
 /*# sourceMappingURL=../maps/main.css.map */
