@@ -1,7 +1,7 @@
 module.exports = {
-    entry: './app.js',
+    entry: './jsx/app.jsx',
     output: {
-        filename: 'out.js'
+        filename: './js/app.js'
     },
     watch: true,
     module: {
@@ -13,6 +13,21 @@ module.exports = {
                 query: {
                     presets: ['es2015']
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: [
+                    'style-loader',
+                    'css-loader'
+                    ]
+            },
+            {
+                test: /\.scss$/,
+                loaders: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                    ]
             }
         ]
     }
