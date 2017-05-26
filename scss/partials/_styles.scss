@@ -1,5 +1,62 @@
+html {
+    font: 16px $font-cuprum;
+}
+
+body {
+    background: #fbfbfb;
+}
+
 header {
-    background: lightcoral;
+    background: white;
     font-family: $font-cuprum;
     width: 100%;
+    height: 150px;
+    position: relative;
+
+    #back-button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #b2b2b2;
+        border-radius: 50%;
+        margin: 35px 0 0 20px;
+        position: absolute;
+        #back-sign {
+            width: 18px;
+            height: 18px;
+            border-left: 1px solid #b2b2b2;
+            border-bottom: 1px solid #b2b2b2;
+            // -ms-transform: translate(10px, 10px) rotate(45deg);
+            // -webkit-transform: translate(10px, 10px) rotate(45deg);
+            transform: translate(14px, 10px) rotate(45deg);
+        }
+    }
+
+    #head-container {
+        width: 800px;
+        margin: 0 auto;
+        #name {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 50px 0 0 0;
+            float: left;
+        }
+        #plus-button {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 26px;
+            font-weight: 100;
+            background: #2763B2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+        #sort {
+            float: right;
+        }
+    }
 }
