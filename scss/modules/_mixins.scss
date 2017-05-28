@@ -1,0 +1,7 @@
+@mixin fontSansSerif($size) {
+    font: normal $size Cuprum, sans-serif;
+}
+
+@mixin fontSerif($size) {
+    font: italic $size Vollkorn, serif;
+}
