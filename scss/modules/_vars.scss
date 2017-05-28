@@ -2,4 +2,12 @@ $fontSansSerif: Cuprum, sans-serif;
 $fontSerif: Vollkorn, serif;
 
 $backgroundQuestion: #e1f3fd;
+$coloredText: #2763b2;
 $colorActivitie: #a7a9ac;
+$colorActive: black;
+
+%flexCentered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

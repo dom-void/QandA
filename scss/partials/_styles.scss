@@ -58,9 +58,7 @@ header {
                 // font-size: 26px;
                 background: #2763B2;
                 margin-bottom: 5px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %flexCentered;
             }
             #head-select {
                 width: 360px;
@@ -119,7 +117,13 @@ header {
         width: 800px;
         height: 320px;
         margin: 0 auto;
-        background: lightgoldenrodyellow;
+        background: white;
+        border-bottom: 1px solid #e5e5e5;
+        box-shadow: 2px 1px 6px 0px rgba(220,220,220,1);
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
         .question-title {
             width: 590px;
             background-color: $backgroundQuestion;
@@ -128,12 +132,27 @@ header {
     }
 }
 
-.avatar {
+.avatar-box {
     width: 90px;
     height: 90px;
-    background-image: url('/img/avatars/003.png');
     background-repeat: no-repeat;
     background-position: center;
+    @extend %flexCentered;
+
+}
+
+@for $i from 1 through 7 {
+    .avatar00#{$i} {
+        background-image: url('/img/avatars/00#{$i}.png');
+    }
+}
+.number {
+    font-size: 1em;
+    color: black;
+}
+.status {
+    @include fontSerif(0.9em);
+    color: black;
 }
 
 .topic {
@@ -148,14 +167,14 @@ header {
         display: inline-block;
     }
     .user-name {
-        color: #2763b2;
+        color: $coloredText;
         font-size: 1em;
         text-transform: none;
         margin: 15px 0 0 20px;
     }
     h2 {
         @include fontSerif(1.2em);
-        color: #2763b2;
+        color: $coloredText;
         margin-left: 18px;
     }
 }
@@ -203,9 +222,7 @@ header {
     width: 70px;
     height: 30px;
     border-top: 1px solid $colorActivitie;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flexCentered;
     position: absolute;
     bottom: 0;
     .status-dot {
@@ -220,6 +237,13 @@ header {
         color: $colorActivitie;
         font-size: 0.75em;
         text-transform: uppercase;
+    }
+}
+
+.status-box {
+    padding-left: 40px;
+    p {
+        margin-bottom: 40px;
     }
 }
 
