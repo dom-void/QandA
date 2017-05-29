@@ -1,4 +1,4 @@
-header #head-container #head-top #plus-button, .avatar-box, .active-type {
+header #head-container #head-top #plus-button, .avatar-box, .more-activities .description, .active-type {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,12 +250,12 @@ header #head-container #head-bottom #search-submit {
 
 .number {
   font-size: 1em;
-  color: black;
+  color: #414b51;
 }
 
 .status {
   font: italic 0.9em Vollkorn, serif;
-  color: black;
+  color: #414b51;
 }
 
 .topic {
@@ -316,6 +316,19 @@ header #head-container #head-bottom #search-submit {
   background-color: #e1f3fd;
 }
 
+.more-activities {
+  position: relative;
+}
+
+.more-activities .description {
+  flex-direction: column;
+  margin-top: 13px;
+}
+
+.more-activities .status-dot {
+  top: 150px;
+}
+
 .single-activitie {
   background-color: #eeeeee;
 }
@@ -328,19 +341,19 @@ header #head-container #head-bottom #search-submit {
   bottom: 0;
 }
 
-.active-type .status-dot {
+.active-type p {
+  color: #a7a9ac;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.status-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #a7a9ac;
   position: absolute;
   top: 26px;
-}
-
-.active-type p {
-  color: #a7a9ac;
-  font-size: 0.75em;
-  text-transform: uppercase;
 }
 
 .status-box {

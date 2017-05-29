@@ -126,7 +126,7 @@ header {
         align-content: flex-start;
         .question-title {
             width: 590px;
-            background-color: $backgroundQuestion;
+            background-color: $backgroundTitle;
             display: flex;
         }
     }
@@ -148,18 +148,18 @@ header {
 }
 .number {
     font-size: 1em;
-    color: black;
+    color: $textSecondLevel;
 }
 .status {
     @include fontSerif(0.9em);
-    color: black;
+    color: $textSecondLevel;
 }
 
 .topic {
     width: 500px;
     height: 90px;
     p {
-        color: $colorActivitie;
+        color: $textThirdLevel;
         font-weight: 100;
         font-size: 0.75em;
         text-transform: uppercase;
@@ -167,14 +167,14 @@ header {
         display: inline-block;
     }
     .user-name {
-        color: $coloredText;
+        color: $textAccented;
         font-size: 1em;
         text-transform: none;
         margin: 15px 0 0 20px;
     }
     h2 {
         @include fontSerif(1.2em);
-        color: $coloredText;
+        color: $textAccented;
         margin-left: 18px;
     }
 }
@@ -186,7 +186,7 @@ header {
     .blue-box {
         width: 90px;
         height: 30px;
-        background-color: $backgroundQuestion;
+        background-color: $backgroundTitle;
     }
 }
 
@@ -206,11 +206,19 @@ header {
 }
 
 .question-type {
-    background-color: $backgroundQuestion;
+    background-color: $backgroundTitle;
 }
 
 .more-activities {
-
+    position: relative;
+    .description {
+        @extend %flexCentered;
+        flex-direction: column;
+        margin-top: 13px;
+    }
+    .status-dot {
+        top: 150px;
+    }
 }
 
 .single-activitie {
@@ -221,23 +229,24 @@ header {
     // align-self: flex-end;
     width: 70px;
     height: 30px;
-    border-top: 1px solid $colorActivitie;
+    border-top: 1px solid $textThirdLevel;
     @extend %flexCentered;
     position: absolute;
     bottom: 0;
-    .status-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: $colorActivitie;
-        position: absolute;
-        top: 26px;
-    }
     p {
-        color: $colorActivitie;
+        color: $textThirdLevel;
         font-size: 0.75em;
         text-transform: uppercase;
     }
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $textThirdLevel;
+    position: absolute;
+    top: 26px;
 }
 
 .status-box {
