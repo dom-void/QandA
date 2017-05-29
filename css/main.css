@@ -93,6 +93,8 @@
   height: 18px;
   border-left: 1px solid #b2b2b2;
   border-bottom: 1px solid #b2b2b2;
+  -ms-transform: translate(14px, 10px) rotate(45deg);
+  -webkit-transform: translate(14px, 10px) rotate(45deg);
   transform: translate(14px, 10px) rotate(45deg);
 }
 

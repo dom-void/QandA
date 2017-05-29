@@ -4,13 +4,13 @@ html {
 }
 
 body {
-    background: #fbfbfb;
+    background: $backgroundSite;
 }
 
 // HEADER styles
 
 header {
-    background: white;
+    background: $backgroundMain;
     font-family: $fontSansSerif;
     width: 100%;
     // height: 150px;
