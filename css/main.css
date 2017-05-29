@@ -82,12 +82,6 @@
   position: absolute;
 }
 
-@media (min-width: 801px) and (max-width: 944px) {
-  #back-button {
-    display: none;
-  }
-}
-
 #back-button #back-sign {
   width: 18px;
   height: 18px;
@@ -203,7 +197,6 @@ header #head-container #head-bottom #text-input {
 }
 
 #questions-container .question-container {
-  width: 800px;
   height: 320px;
   margin: 0 auto;
   background: white;
@@ -216,13 +209,11 @@ header #head-container #head-bottom #text-input {
 }
 
 #questions-container .question-container .question-title {
-  width: 590px;
   background-color: #e1f3fd;
   display: flex;
 }
 
 .avatar-box {
-  width: 90px;
   height: 90px;
   background-repeat: no-repeat;
   background-position: center;
@@ -267,7 +258,6 @@ header #head-container #head-bottom #text-input {
 }
 
 .topic {
-  width: 500px;
   height: 90px;
 }
 
@@ -294,26 +284,22 @@ header #head-container #head-bottom #text-input {
 }
 
 .margin-bar {
-  width: 100%;
   height: 30px;
   box-sizing: border-box;
 }
 
 .margin-bar .blue-box {
-  width: 90px;
   height: 30px;
   background-color: #e1f3fd;
 }
 
 .activities {
-  width: 590px;
   display: flex;
   justify-content: space-between;
 }
 
 .activitie-box {
   height: 155px;
-  width: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -342,7 +328,6 @@ header #head-container #head-bottom #text-input {
 }
 
 .active-type {
-  width: 70px;
   height: 30px;
   border-top: 1px solid #a7a9ac;
   position: absolute;
@@ -378,6 +363,66 @@ header #head-container #head-bottom #text-input {
 
 .answered .status-dot {
   background-color: black;
+}
+
+@media (min-width: 801px) {
+  .question-container {
+    width: 800px;
+  }
+  .question-container .question-title {
+    width: 590px;
+  }
+  .avatar-box {
+    width: 90px;
+  }
+  .topic {
+    width: 500px;
+  }
+  .margin-bar {
+    width: 100%;
+  }
+  .margin-bar .blue-box {
+    width: 90px;
+  }
+  .activities {
+    width: 590px;
+  }
+  .activitie-box {
+    width: 90px;
+  }
+  .active-type {
+    width: 70px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .question-container {
+    width: 495px;
+  }
+  .question-container .question-title {
+    width: 495px;
+  }
+  .avatar-box {
+    width: 90px;
+  }
+  .topic {
+    width: 405px;
+  }
+  .margin-bar {
+    width: 100%;
+  }
+  .margin-bar .blue-box {
+    width: 90px;
+  }
+  .activities {
+    width: 305px;
+  }
+  .activitie-box {
+    width: 90px;
+  }
+  .active-type {
+    width: 70px;
+  }
 }
 
 /*# sourceMappingURL=../maps/main.css.map */
