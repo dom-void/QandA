@@ -1,8 +1,16 @@
+// fonts
 $fontSansSerif: Cuprum, sans-serif;
 $fontSerif: Vollkorn, serif;
 
+// flex center placeholder
 %flexCentered {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+// media breakpoints
+$desktop: '(min-width: 945px)';
+$desktopSmall: '(min-width: 801px) and (max-width: 944px)';
+$tablet: '(min-width: 500px) and (max-width: 800px)';
+$mobile: '(max-width: 499px)';

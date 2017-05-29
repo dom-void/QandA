@@ -1,4 +1,4 @@
-header #head-container #head-top #plus-button, .avatar-box, .more-activities .description, .active-type {
+#plus-button, .avatar-box, .more-activities .description, .active-type {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +73,49 @@ header #head-container #head-top #plus-button, .avatar-box, .more-activities .de
   margin: 0;
 }
 
+#back-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #b2b2b2;
+  border-radius: 50%;
+  margin: 29px 0 0 20px;
+  position: absolute;
+}
+
+@media (min-width: 801px) and (max-width: 944px) {
+  #back-button {
+    display: none;
+  }
+}
+
+#back-button #back-sign {
+  width: 18px;
+  height: 18px;
+  border-left: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  transform: translate(14px, 10px) rotate(45deg);
+}
+
+#plus-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  font: 100 27px Arial, Helvetica, sans-serif;
+  background: #2763B2;
+  margin-bottom: 5px;
+}
+
+#search-submit {
+  height: 35px;
+  width: 180px;
+  font-size: 0.9em;
+  box-sizing: border-box;
+  background: white;
+  color: #a7a9ac;
+  border: 1px solid #a7a9ac;
+}
+
 html {
   font: 16px Cuprum, sans-serif;
   letter-spacing: 0.04em;
@@ -87,23 +130,6 @@ header {
   font-family: Cuprum, sans-serif;
   width: 100%;
   position: relative;
-}
-
-header #back-button {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #b2b2b2;
-  border-radius: 50%;
-  margin: 29px 0 0 20px;
-  position: absolute;
-}
-
-header #back-button #back-sign {
-  width: 18px;
-  height: 18px;
-  border-left: 1px solid #b2b2b2;
-  border-bottom: 1px solid #b2b2b2;
-  transform: translate(14px, 10px) rotate(45deg);
 }
 
 header #head-container {
@@ -124,16 +150,6 @@ header #head-container #head-top #name {
   font-size: 1.8em;
   font-weight: bold;
   letter-spacing: 2px;
-}
-
-header #head-container #head-top #plus-button {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  color: white;
-  font: 100 27px Arial, Helvetica, sans-serif;
-  background: #2763B2;
-  margin-bottom: 5px;
 }
 
 header #head-container #head-top #head-select {
@@ -178,16 +194,6 @@ header #head-container #head-bottom #text-input {
   color: #7e8b93;
   border: 1px solid #eeeeee;
   padding: 0 10px 0 10px;
-}
-
-header #head-container #head-bottom #search-submit {
-  height: 35px;
-  width: 180px;
-  font-size: 0.9em;
-  box-sizing: border-box;
-  background: white;
-  color: #a7a9ac;
-  border: 1px solid #a7a9ac;
 }
 
 #questions-container {

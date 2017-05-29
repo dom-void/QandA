@@ -1,3 +1,5 @@
+// font mixins
+
 @mixin fontSansSerif($size) {
     font: normal $size Cuprum, sans-serif;
 }
