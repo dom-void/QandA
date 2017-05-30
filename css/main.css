@@ -126,6 +126,7 @@ header {
   font-family: Cuprum, sans-serif;
   width: 100%;
   position: relative;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 header #head-container {
@@ -197,7 +198,6 @@ header #head-container #head-bottom #text-input {
 }
 
 #questions-container .question-container {
-  height: 320px;
   margin: 0 auto;
   background: white;
   border-bottom: 1px solid #e5e5e5;
@@ -248,7 +248,8 @@ header #head-container #head-bottom #text-input {
 }
 
 .number {
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: bolder;
   color: #414b51;
 }
 
@@ -294,6 +295,7 @@ header #head-container #head-bottom #text-input {
 }
 
 .activities {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
 }
@@ -368,6 +370,7 @@ header #head-container #head-bottom #text-input {
 @media (min-width: 801px) {
   .question-container {
     width: 800px;
+    height: 320px;
   }
   .question-container .question-title {
     width: 590px;
@@ -398,6 +401,7 @@ header #head-container #head-bottom #text-input {
 @media (min-width: 500px) and (max-width: 800px) {
   .question-container {
     width: 495px;
+    height: 320px;
   }
   .question-container .question-title {
     width: 495px;
@@ -422,6 +426,73 @@ header #head-container #head-bottom #text-input {
   }
   .active-type {
     width: 70px;
+  }
+}
+
+@media (max-width: 499px) {
+  .question-container {
+    width: 320px;
+    height: 235px;
+  }
+  .question-container .question-title {
+    width: 320px;
+  }
+  .avatar-box {
+    width: 70px;
+    height: 70px;
+  }
+  .topic {
+    width: 245px;
+    height: auto;
+  }
+  .topic .user-name {
+    margin: 15px 0 0 1px;
+  }
+  .topic h2 {
+    font-size: 0.9em;
+    margin-left: 0;
+  }
+  .margin-bar {
+    width: 100%;
+    height: 1px;
+  }
+  .margin-bar .blue-box {
+    display: none;
+  }
+  .activities {
+    width: 152px;
+    padding-bottom: 10px;
+  }
+  .activitie-box {
+    width: 75px;
+    height: 135px;
+  }
+  .question-type {
+    display: none;
+  }
+  .active-type {
+    width: 55px;
+  }
+  .more-activities {
+    background-color: #eeeeee;
+  }
+  .more-activities .description {
+    margin-top: 13px;
+  }
+  .more-activities .status-dot {
+    top: 130px;
+  }
+  .status-box {
+    padding: 15px 0 0 30px;
+  }
+  .status-box p {
+    margin-bottom: 20px;
+  }
+  .status-box p .number {
+    font-size: 1em;
+  }
+  .answered > p {
+    color: black;
   }
 }
 

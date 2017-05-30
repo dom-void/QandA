@@ -15,6 +15,7 @@ header {
     width: 100%;
     // height: 150px;
     position: relative;
+    border-bottom: 1px solid #f5f5f5;
     #head-container {
         width: 800px;
         margin: 0 auto;
@@ -77,7 +78,7 @@ header {
     width: 100%;
     .question-container {
         // width: 800px;
-        height: 320px;
+        // height: 320px;
         margin: 0 auto;
         background: white;
         border-bottom: 1px solid #e5e5e5;
@@ -109,7 +110,8 @@ header {
     }
 }
 .number {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: bolder;
     color: $textSecondLevel;
 }
 .status {
@@ -154,6 +156,7 @@ header {
 
 .activities {
     // width: 590px;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
@@ -184,7 +187,7 @@ header {
 }
 
 .single-activitie {
-    background-color: #eeeeee;
+    background-color: $backgroundUser;
 }
 
 .active-type {
@@ -222,67 +225,5 @@ header {
     border-color: black;
     .status-dot {
         background-color: black;
-    }
-}
-
-// ### media ##### ##### ##### ##### #####
-@media #{$desktop} {
-    .question-container {
-        width: 800px;
-        .question-title {
-            width: 590px;
-        }
-    }
-    .avatar-box {
-        width: 90px;
-    }
-    .topic {
-        width: 500px;
-    }
-    .margin-bar {
-        width: 100%;
-        .blue-box {
-            width: 90px;
-        }
-    }
-    .activities {
-        width: 590px;
-    }
-    .activitie-box {
-        width: 90px;
-    }
-    .active-type {
-        width: 70px;
-    }
-}
-
-// ### media ##### ##### ##### ##### #####
-@media #{$tablet} {
-    .question-container {
-        width: 495px;
-        .question-title {
-            width: 495px;
-        }
-    }
-    .avatar-box {
-        width: 90px;
-    }
-    .topic {
-        width: 405px;
-    }
-    .margin-bar {
-        width: 100%;
-        .blue-box {
-            width: 90px;
-        }
-    }
-    .activities {
-        width: 305px;
-    }
-    .activitie-box {
-        width: 90px;
-    }
-    .active-type {
-        width: 70px;
     }
 }

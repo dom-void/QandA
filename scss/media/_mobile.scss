@@ -1,0 +1,66 @@
+@media #{$mobile} {
+    .question-container {
+        width: 320px;
+        height: 235px;
+        .question-title {
+            width: 320px;
+        }
+    }
+    .avatar-box {
+        width: 70px;
+        height: 70px;
+    }
+    .topic {
+        width: 245px;
+        height: auto;
+        .user-name {
+            margin: 15px 0 0 1px; 
+        }
+        h2 {
+            font-size: 0.9em;
+            margin-left: 0;
+        }
+    }
+    .margin-bar {
+        width: 100%;
+        height: 1px;
+        .blue-box {
+            display: none;
+        }
+    }
+    .activities {
+        width: 152px;
+        padding-bottom: 10px;
+    }
+    .activitie-box {
+        width: 75px;
+        height: 135px;
+    }
+    .question-type {
+        display: none;
+    }
+    .active-type {
+        width: 55px;
+    }
+    .more-activities {
+        background-color: $backgroundUser;
+        .description {
+            margin-top: 13px;
+        }
+        .status-dot {
+            top: 130px;
+        }
+    }
+    .status-box {
+    padding: 15px 0 0 30px;
+        p {
+            margin-bottom: 20px;
+            .number {
+                font-size: 1em;
+            }
+        }
+    }
+    .answered > p {
+        color: black;
+    }
+}

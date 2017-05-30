@@ -1,0 +1,30 @@
+@media #{$desktop} {
+    .question-container {
+        width: 800px;
+        height: 320px;
+        .question-title {
+            width: 590px;
+        }
+    }
+    .avatar-box {
+        width: 90px;
+    }
+    .topic {
+        width: 500px;
+    }
+    .margin-bar {
+        width: 100%;
+        .blue-box {
+            width: 90px;
+        }
+    }
+    .activities {
+        width: 590px;
+    }
+    .activitie-box {
+        width: 90px;
+    }
+    .active-type {
+        width: 70px;
+    }
+}
