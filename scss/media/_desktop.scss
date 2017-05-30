@@ -1,4 +1,9 @@
 @media #{$desktop} {
+
+    // ===== ===== ===== ===== ===== header
+
+
+    // ===== ===== ===== ===== ===== questions container
     .question-container {
         width: 800px;
         height: 320px;
@@ -27,4 +32,8 @@
     .active-type {
         width: 70px;
     }
+
+    // ===== ===== ===== ===== ===== footer
+
+
 }

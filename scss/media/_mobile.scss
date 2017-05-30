@@ -1,4 +1,49 @@
 @media #{$mobile} {
+
+    // ===== ===== ===== ===== ===== header
+        #plus-button {
+        margin-left: 20px;
+    }
+    #search-submit {
+        height: 25px;
+        width: 65px;
+        font-size: 0.8em;
+    }
+    header {
+        #head-container {
+            width: 320px;
+            #head-top {
+                width: 100%;
+                height: auto;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                #head-select {
+                    width: 319px;
+                    form {
+                        font-size: 0.8em;
+                    }
+                }
+                #head-sort {
+                    width: 320px;
+                    p {
+                        font-size: 0.8em;
+                    }
+                    a {
+                        margin: 0;
+                    }
+                }
+            }
+            #head-bottom {
+                padding: 0 0 5px 0;
+                #text-input {
+                    height: 25px;
+                    width: 245px;
+                }
+            }
+        }
+    }
+
+    // ===== ===== ===== ===== ===== questions container
     .question-container {
         width: 320px;
         height: 235px;
@@ -63,4 +108,8 @@
     .answered > p {
         color: black;
     }
+
+    // ===== ===== ===== ===== ===== footer
+
+    
 }

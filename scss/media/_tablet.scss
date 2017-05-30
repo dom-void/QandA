@@ -1,4 +1,40 @@
 @media #{$tablet} {
+
+    // ===== ===== ===== ===== ===== header
+    #plus-button {
+        margin-left: 20px;
+    }
+    #search-submit {
+        height: 30px;
+        width: 90px;
+        font-size: 0.8em;
+    }
+    header {
+        #head-container {
+            width: 495px;
+            #head-top {
+                width: 100%;
+                height: auto;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                #head-select {
+                    width: 300px;
+                }
+                #head-sort {
+                    width: 492px;
+                }
+            }
+            #head-bottom {
+                padding: 0 0 5px 0;
+                #text-input {
+                    height: 30px;
+                    width: 390px;
+                }
+            }
+        }
+    }
+
+    // ===== ===== ===== ===== ===== questions container
     .question-container {
         width: 495px;
         height: 320px;
@@ -27,4 +63,8 @@
     .active-type {
         width: 70px;
     }
+
+    // ===== ===== ===== ===== ===== footer
+
+    
 }

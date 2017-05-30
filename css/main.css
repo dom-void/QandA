@@ -399,6 +399,36 @@ header #head-container #head-bottom #text-input {
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
+  #plus-button {
+    margin-left: 20px;
+  }
+  #search-submit {
+    height: 30px;
+    width: 90px;
+    font-size: 0.8em;
+  }
+  header #head-container {
+    width: 495px;
+  }
+  header #head-container #head-top {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  header #head-container #head-top #head-select {
+    width: 300px;
+  }
+  header #head-container #head-top #head-sort {
+    width: 492px;
+  }
+  header #head-container #head-bottom {
+    padding: 0 0 5px 0;
+  }
+  header #head-container #head-bottom #text-input {
+    height: 30px;
+    width: 390px;
+  }
   .question-container {
     width: 495px;
     height: 320px;
@@ -430,6 +460,45 @@ header #head-container #head-bottom #text-input {
 }
 
 @media (max-width: 499px) {
+  #plus-button {
+    margin-left: 20px;
+  }
+  #search-submit {
+    height: 25px;
+    width: 65px;
+    font-size: 0.8em;
+  }
+  header #head-container {
+    width: 320px;
+  }
+  header #head-container #head-top {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  header #head-container #head-top #head-select {
+    width: 319px;
+  }
+  header #head-container #head-top #head-select form {
+    font-size: 0.8em;
+  }
+  header #head-container #head-top #head-sort {
+    width: 320px;
+  }
+  header #head-container #head-top #head-sort p {
+    font-size: 0.8em;
+  }
+  header #head-container #head-top #head-sort a {
+    margin: 0;
+  }
+  header #head-container #head-bottom {
+    padding: 0 0 5px 0;
+  }
+  header #head-container #head-bottom #text-input {
+    height: 25px;
+    width: 245px;
+  }
   .question-container {
     width: 320px;
     height: 235px;
