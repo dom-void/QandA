@@ -220,31 +220,31 @@ header #head-container #head-bottom #text-input {
 }
 
 .avatar001 {
-  background-image: url("/img/avatars/001.png");
+  background-image: url("../img/avatars/001.png");
 }
 
 .avatar002 {
-  background-image: url("/img/avatars/002.png");
+  background-image: url("../img/avatars/002.png");
 }
 
 .avatar003 {
-  background-image: url("/img/avatars/003.png");
+  background-image: url("../img/avatars/003.png");
 }
 
 .avatar004 {
-  background-image: url("/img/avatars/004.png");
+  background-image: url("../img/avatars/004.png");
 }
 
 .avatar005 {
-  background-image: url("/img/avatars/005.png");
+  background-image: url("../img/avatars/005.png");
 }
 
 .avatar006 {
-  background-image: url("/img/avatars/006.png");
+  background-image: url("../img/avatars/006.png");
 }
 
 .avatar007 {
-  background-image: url("/img/avatars/007.png");
+  background-image: url("../img/avatars/007.png");
 }
 
 .number {
