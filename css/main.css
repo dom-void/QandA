@@ -121,6 +121,12 @@ body {
   background: #fbfbfb;
 }
 
+.container-border {
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 2px 1px 6px 0px gainsboro;
+}
+
 header {
   background: white;
   font-family: Cuprum, sans-serif;
@@ -199,9 +205,6 @@ header #head-container #head-bottom #text-input {
 
 #questions-container .question-container {
   margin: 0 auto;
-  background: white;
-  border-bottom: 1px solid #e5e5e5;
-  box-shadow: 2px 1px 6px 0px gainsboro;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -367,6 +370,24 @@ header #head-container #head-bottom #text-input {
   background-color: black;
 }
 
+footer {
+  width: 100%;
+}
+
+footer div {
+  width: 800px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+footer div a {
+  color: red;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
 @media (min-width: 801px) {
   .question-container {
     width: 800px;
@@ -456,6 +477,10 @@ header #head-container #head-bottom #text-input {
   }
   .active-type {
     width: 70px;
+  }
+  footer > div {
+    width: 495px;
+    height: 60px;
   }
 }
 
@@ -562,6 +587,10 @@ header #head-container #head-bottom #text-input {
   }
   .answered > p {
     color: black;
+  }
+  footer div {
+    width: 320px;
+    height: 30px;
   }
 }
 

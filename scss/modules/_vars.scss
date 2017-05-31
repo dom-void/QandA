@@ -9,6 +9,11 @@ $fontSerif: Vollkorn, serif;
     align-items: center;
 }
 
+// containers widths
+$widthL: 800px;
+$widthM: 495px;
+$widthS: 320px;
+
 // media breakpoints
 $desktop: '(min-width: 801px)';
 $desktopSmall: '(min-width: 801px) and (max-width: 944px)';

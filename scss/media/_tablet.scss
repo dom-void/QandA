@@ -66,5 +66,9 @@
 
     // ===== ===== ===== ===== ===== footer
 
+    footer > div {
+        width: $widthM;
+        height: 60px;
+    }
     
 }
