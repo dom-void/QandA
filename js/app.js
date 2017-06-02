@@ -9422,6 +9422,8 @@ module.exports = __webpack_require__(19);
 "use strict";
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(80);
 
 var _react2 = _interopRequireDefault(_react);
@@ -9432,12 +9434,97 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_React$Component) {
+    _inherits(App, _React$Component);
+
+    function App() {
+        _classCallCheck(this, App);
+
+        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    }
+
+    _createClass(App, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'header',
+                null,
+                _react2.default.createElement(
+                    'section',
+                    { id: 'back-button' },
+                    _react2.default.createElement('div', { id: 'back-sign' })
+                ),
+                _react2.default.createElement(
+                    'section',
+                    { id: 'head-container' },
+                    _react2.default.createElement(
+                        'section',
+                        { id: 'head-top' },
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'name' },
+                            'QUESTIONS'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'plus-button' },
+                            '+'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'head-select' },
+                            _react2.default.createElement(
+                                'form',
+                                null,
+                                _react2.default.createElement('input', { type: 'radio' }),
+                                'My shelf',
+                                _react2.default.createElement('input', { type: 'radio' }),
+                                'All questions'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { id: 'head-sort' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Sort by: ',
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    'recent'
+                                ),
+                                ' or ',
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    'hot'
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'section',
+                        { id: 'head-bottom' },
+                        _react2.default.createElement('input', { id: 'text-input', type: 'text', placeholder: 'Search questions' }),
+                        _react2.default.createElement('input', { id: 'search-submit', type: 'submit', value: 'SEARCH' })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return App;
+}(_react2.default.Component);
+
 document.addEventListener('DOMContentLoaded', function () {
-    _reactDom2.default.render(_react2.default.createElement(
-        'h1',
-        null,
-        'React renderuje poprawnie'
-    ), document.getElementById('app'));
+    _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
 });
 
 /***/ }),
