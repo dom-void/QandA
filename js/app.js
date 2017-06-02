@@ -9509,7 +9509,7 @@ var Activities = function (_React$Component2) {
     }, {
         key: 'render',
         value: function render() {
-            console.log(this.state.width);
+            // console.log(this.state.width);
             if (this.state.width > 800) {
                 return _react2.default.createElement(
                     'div',
@@ -9713,8 +9713,33 @@ var QuestionContainer = function (_React$Component3) {
     return QuestionContainer;
 }(_react2.default.Component);
 
-var App = function (_React$Component4) {
-    _inherits(App, _React$Component4);
+var QuestionsContainer = function (_React$Component4) {
+    _inherits(QuestionsContainer, _React$Component4);
+
+    function QuestionsContainer() {
+        _classCallCheck(this, QuestionsContainer);
+
+        return _possibleConstructorReturn(this, (QuestionsContainer.__proto__ || Object.getPrototypeOf(QuestionsContainer)).apply(this, arguments));
+    }
+
+    _createClass(QuestionsContainer, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { id: 'questions-container' },
+                _react2.default.createElement(QuestionContainer, null),
+                _react2.default.createElement(QuestionContainer, null),
+                _react2.default.createElement(QuestionContainer, null)
+            );
+        }
+    }]);
+
+    return QuestionsContainer;
+}(_react2.default.Component);
+
+var App = function (_React$Component5) {
+    _inherits(App, _React$Component5);
 
     function App() {
         _classCallCheck(this, App);
@@ -9793,11 +9818,7 @@ var App = function (_React$Component4) {
                         )
                     )
                 ),
-                _react2.default.createElement(
-                    'section',
-                    { id: 'questions-container' },
-                    _react2.default.createElement(QuestionContainer, null)
-                ),
+                _react2.default.createElement(QuestionsContainer, null),
                 _react2.default.createElement(
                     'footer',
                     null,

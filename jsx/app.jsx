@@ -33,7 +33,7 @@ class Activities extends React.Component {
         this.setState({ width: window.innerWidth });
     }
     render() {
-        console.log(this.state.width);
+        // console.log(this.state.width);
         if (this.state.width > 800) {
             return <div className="activities">
                 <div className="question-type activitie-box">
@@ -113,6 +113,16 @@ class QuestionContainer extends React.Component {
     }
 }
 
+class QuestionsContainer extends React.Component {
+    render() {
+        return <section id="questions-container">
+                <QuestionContainer />
+                <QuestionContainer />
+                <QuestionContainer />
+            </section>;
+    }
+}
+
 class App extends React.Component {
     render() {
         return <div>
@@ -140,9 +150,7 @@ class App extends React.Component {
                     </section>
                 </section>
             </header>
-            <section id="questions-container">
-                <QuestionContainer />
-            </section>
+            <QuestionsContainer />
             <footer>
                 <div className="container-border">
                     <a href="#">load more questions</a>
