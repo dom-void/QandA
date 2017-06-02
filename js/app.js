@@ -9453,67 +9453,228 @@ var App = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'header',
+                'div',
                 null,
                 _react2.default.createElement(
-                    'section',
-                    { id: 'back-button' },
-                    _react2.default.createElement('div', { id: 'back-sign' })
-                ),
-                _react2.default.createElement(
-                    'section',
-                    { id: 'head-container' },
+                    'header',
+                    null,
                     _react2.default.createElement(
                         'section',
-                        { id: 'head-top' },
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'name' },
-                            'QUESTIONS'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'plus-button' },
-                            '+'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'head-select' },
-                            _react2.default.createElement(
-                                'form',
-                                null,
-                                _react2.default.createElement('input', { type: 'radio' }),
-                                'My shelf',
-                                _react2.default.createElement('input', { type: 'radio' }),
-                                'All questions'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'head-sort' },
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                'Sort by: ',
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: '#' },
-                                    'recent'
-                                ),
-                                ' or ',
-                                _react2.default.createElement(
-                                    'a',
-                                    { href: '#' },
-                                    'hot'
-                                )
-                            )
-                        )
+                        { id: 'back-button' },
+                        _react2.default.createElement('div', { id: 'back-sign' })
                     ),
                     _react2.default.createElement(
                         'section',
-                        { id: 'head-bottom' },
-                        _react2.default.createElement('input', { id: 'text-input', type: 'text', placeholder: 'Search questions' }),
-                        _react2.default.createElement('input', { id: 'search-submit', type: 'submit', value: 'SEARCH' })
+                        { id: 'head-container' },
+                        _react2.default.createElement(
+                            'section',
+                            { id: 'head-top' },
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'name' },
+                                'QUESTIONS'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'plus-button' },
+                                '+'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'head-select' },
+                                _react2.default.createElement(
+                                    'form',
+                                    null,
+                                    _react2.default.createElement('input', { type: 'radio' }),
+                                    'My shelf',
+                                    _react2.default.createElement('input', { type: 'radio' }),
+                                    'All questions'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'head-sort' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Sort by: ',
+                                    _react2.default.createElement(
+                                        'a',
+                                        { href: '#' },
+                                        'recent'
+                                    ),
+                                    ' or ',
+                                    _react2.default.createElement(
+                                        'a',
+                                        { href: '#' },
+                                        'hot'
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'section',
+                            { id: 'head-bottom' },
+                            _react2.default.createElement('input', { id: 'text-input', type: 'text', placeholder: 'Search questions' }),
+                            _react2.default.createElement('input', { id: 'search-submit', type: 'submit', value: 'SEARCH' })
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'section',
+                    { id: 'questions-container' },
+                    _react2.default.createElement(
+                        'section',
+                        { className: 'question-container container-border' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'question-title' },
+                            _react2.default.createElement('div', { className: 'avatar-box avatar001' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'topic' },
+                                _react2.default.createElement(
+                                    'p',
+                                    { className: 'user-name' },
+                                    'Eva'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'is asking:'
+                                ),
+                                _react2.default.createElement(
+                                    'h2',
+                                    null,
+                                    'Will insulin make my patient gain weight?'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'margin-bar' },
+                            _react2.default.createElement('div', { className: 'blue-box' })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'activities' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'question-type activitie-box' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'active-type' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        'Asked'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'more-activities activitie-box' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'avatar-box' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        { className: 'number' },
+                                        '3'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'description' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        { className: 'status' },
+                                        'more'
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        { className: 'status' },
+                                        'activities'
+                                    )
+                                ),
+                                _react2.default.createElement('div', { className: 'status-dot' })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'single-activitie activitie-box' },
+                                _react2.default.createElement('div', { className: 'avatar-box avatar005' }),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'active-type answered' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        'Answered'
+                                    ),
+                                    _react2.default.createElement('div', { className: 'status-dot' })
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'status-box' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'number' },
+                                    '1'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'status' },
+                                    'related discussion'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'number' },
+                                    '6'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'status' },
+                                    'peers involved'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'number' },
+                                    '3'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: 'status' },
+                                    'conversations'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement('div', { className: 'question-status' })
+                    )
+                ),
+                _react2.default.createElement(
+                    'footer',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'container-border' },
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#' },
+                            'load more questions'
+                        )
                     )
                 )
             );
