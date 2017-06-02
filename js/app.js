@@ -9440,8 +9440,281 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var App = function (_React$Component) {
-    _inherits(App, _React$Component);
+var SingleActivitie = function (_React$Component) {
+    _inherits(SingleActivitie, _React$Component);
+
+    function SingleActivitie() {
+        _classCallCheck(this, SingleActivitie);
+
+        return _possibleConstructorReturn(this, (SingleActivitie.__proto__ || Object.getPrototypeOf(SingleActivitie)).apply(this, arguments));
+    }
+
+    _createClass(SingleActivitie, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'single-activitie activitie-box' },
+                _react2.default.createElement('div', { className: 'avatar-box avatar005' }),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'active-type answered' },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Answered'
+                    ),
+                    _react2.default.createElement('div', { className: 'status-dot' })
+                )
+            );
+        }
+    }]);
+
+    return SingleActivitie;
+}(_react2.default.Component);
+
+var Activities = function (_React$Component2) {
+    _inherits(Activities, _React$Component2);
+
+    function Activities(props) {
+        _classCallCheck(this, Activities);
+
+        var _this2 = _possibleConstructorReturn(this, (Activities.__proto__ || Object.getPrototypeOf(Activities)).call(this, props));
+
+        _this2.updateWidth = function () {
+            _this2.setState({ width: window.innerWidth });
+        };
+
+        _this2.state = {
+            width: null
+        };
+        return _this2;
+    }
+
+    _createClass(Activities, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            this.updateWidth();
+        }
+    }, {
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            window.addEventListener('resize', this.updateWidth);
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            window.removeEventListener('resize', this.updateWidth);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            console.log(this.state.width);
+            if (this.state.width > 800) {
+                return _react2.default.createElement(
+                    'div',
+                    { className: 'activities' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'question-type activitie-box' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'active-type' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Asked'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'more-activities activitie-box' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'avatar-box' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'number' },
+                                '3'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'description' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'status' },
+                                'more'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'status' },
+                                'activities'
+                            )
+                        ),
+                        _react2.default.createElement('div', { className: 'status-dot' })
+                    ),
+                    _react2.default.createElement(SingleActivitie, null),
+                    _react2.default.createElement(SingleActivitie, null),
+                    _react2.default.createElement(SingleActivitie, null),
+                    _react2.default.createElement(SingleActivitie, null)
+                );
+            } else {
+                return _react2.default.createElement(
+                    'div',
+                    { className: 'activities' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'question-type activitie-box' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'active-type' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Asked'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'more-activities activitie-box' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'avatar-box' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'number' },
+                                '3'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'description' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'status' },
+                                'more'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'status' },
+                                'activities'
+                            )
+                        ),
+                        _react2.default.createElement('div', { className: 'status-dot' })
+                    ),
+                    _react2.default.createElement(SingleActivitie, null)
+                );
+            }
+        }
+    }]);
+
+    return Activities;
+}(_react2.default.Component);
+
+var QuestionContainer = function (_React$Component3) {
+    _inherits(QuestionContainer, _React$Component3);
+
+    function QuestionContainer() {
+        _classCallCheck(this, QuestionContainer);
+
+        return _possibleConstructorReturn(this, (QuestionContainer.__proto__ || Object.getPrototypeOf(QuestionContainer)).apply(this, arguments));
+    }
+
+    _createClass(QuestionContainer, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'question-container container-border' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'question-title' },
+                    _react2.default.createElement('div', { className: 'avatar-box avatar001' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'topic' },
+                        _react2.default.createElement(
+                            'p',
+                            { className: 'user-name' },
+                            'Eva'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'is asking:'
+                        ),
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Will insulin make my patient gain weight?'
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'margin-bar' },
+                    _react2.default.createElement('div', { className: 'blue-box' })
+                ),
+                _react2.default.createElement(Activities, null),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'status-box' },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'number' },
+                            '1'
+                        ),
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'status' },
+                            'related discussion'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'number' },
+                            '6'
+                        ),
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'status' },
+                            'peers involved'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'number' },
+                            '3'
+                        ),
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'status' },
+                            'conversations'
+                        )
+                    )
+                ),
+                _react2.default.createElement('div', { className: 'question-status' })
+            );
+        }
+    }]);
+
+    return QuestionContainer;
+}(_react2.default.Component);
+
+var App = function (_React$Component4) {
+    _inherits(App, _React$Component4);
 
     function App() {
         _classCallCheck(this, App);
@@ -9523,146 +9796,7 @@ var App = function (_React$Component) {
                 _react2.default.createElement(
                     'section',
                     { id: 'questions-container' },
-                    _react2.default.createElement(
-                        'section',
-                        { className: 'question-container container-border' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'question-title' },
-                            _react2.default.createElement('div', { className: 'avatar-box avatar001' }),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'topic' },
-                                _react2.default.createElement(
-                                    'p',
-                                    { className: 'user-name' },
-                                    'Eva'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    'is asking:'
-                                ),
-                                _react2.default.createElement(
-                                    'h2',
-                                    null,
-                                    'Will insulin make my patient gain weight?'
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'margin-bar' },
-                            _react2.default.createElement('div', { className: 'blue-box' })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'activities' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'question-type activitie-box' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'active-type' },
-                                    _react2.default.createElement(
-                                        'p',
-                                        null,
-                                        'Asked'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'more-activities activitie-box' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'avatar-box' },
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'number' },
-                                        '3'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'description' },
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'status' },
-                                        'more'
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'status' },
-                                        'activities'
-                                    )
-                                ),
-                                _react2.default.createElement('div', { className: 'status-dot' })
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'single-activitie activitie-box' },
-                                _react2.default.createElement('div', { className: 'avatar-box avatar005' }),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'active-type answered' },
-                                    _react2.default.createElement(
-                                        'p',
-                                        null,
-                                        'Answered'
-                                    ),
-                                    _react2.default.createElement('div', { className: 'status-dot' })
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'status-box' },
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'number' },
-                                    '1'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'status' },
-                                    'related discussion'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'number' },
-                                    '6'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'status' },
-                                    'peers involved'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'number' },
-                                    '3'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    { className: 'status' },
-                                    'conversations'
-                                )
-                            )
-                        ),
-                        _react2.default.createElement('div', { className: 'question-status' })
-                    )
+                    _react2.default.createElement(QuestionContainer, null)
                 ),
                 _react2.default.createElement(
                     'footer',
