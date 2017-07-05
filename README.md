@@ -9,7 +9,7 @@ I did it using: `React`, `webpack`, `RWD`, `html5`, `gulp` and `sass`/`scss`.
 
 ## What I already did
 ### Views
-I got `.png` files with the UI design. You can see them all [here](https://github.com/dom-void/QandA/blob/master/blueprints/imgs/). I did some mockups to have full responsive static sites in `html` and `css` using `sass`. My mockups are available [here](https://github.com/dom-void/QandA/blob/master/blueprints/mockups/all_question_base.htm). I'd like to have it to easyly build my `React` components in the next steps.
+I got `.png` files with the UI design. You can see them all [here](https://github.com/dom-void/QandA/blob/master/blueprints/imgs/). I did some mockups to have full responsive static sites in `html` and `css` using `sass`. My mockups are available [here](https://github.com/dom-void/QandA/blob/master/blueprints/mockups/). I'd like to have it to easyly build my `React` components in the next steps.
 ### Engine
 1. I moved main `html` view into `React` and rendered it.
 2. I started to design my `React` components. You can see it [here](https://github.com/dom-void/QandA/blob/master/blueprints/react-components-design/components.PNG).
